@@ -1,4 +1,7 @@
 Internet
 Unix
 Bash
+HTML
+CSS
+JAVASCRIPT
 React
