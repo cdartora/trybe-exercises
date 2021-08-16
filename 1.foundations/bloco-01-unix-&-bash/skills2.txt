@@ -1,9 +1,0 @@
-Internet
-Unix
-Bash
-Empatia
-Comunicação
-Paciência
-HTML
-javascript
-python
