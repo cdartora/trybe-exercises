@@ -1,31 +1,27 @@
-body {
-    font-size: 30px;
-}
-h1 {
-    font-size: 65px;
-    color: orange;
-    font-family: sans-serif;
-}
-p {
-    font-weight: 600px;
-    font-size: 3em;
-    text-decoration: overline;
-}
-ul {
-    background-color: orange;
-    font-style: italic;
-    line-height: 30px;
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
     text-align: center;
+    vertical-align: top;
 }
-.orange {
-    background-color: orange;
+
+.width-and-height {
+    height: 50px;
+    width: 50px;
 }
-#amarelo {
-    background-color: yellow;
-}
-#vermelho {
-    background-color: red;
-}
-#marrom {
-    background-color: brown;
-}
+
+
+/* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
+
+.padding {}
+
+
+/* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
+
+.margin {}
+
+
+/* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
+
+.border {}
