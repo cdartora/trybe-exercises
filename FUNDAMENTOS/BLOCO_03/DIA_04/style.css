@@ -1,10 +1,5 @@
-body {
-    border: 2px solid black;
-}
-
 header {
     text-align: center;
-    border: 2px solid black;
 }
 
 header li {
@@ -12,7 +7,6 @@ header li {
 }
 
 main {
-    border: 2px solid black;
     position: relative;
     display: inline-block;
 }
@@ -20,7 +14,6 @@ main {
 article {
     margin-top: 20px;
     margin-right: 26%;
-    border: 2px solid black;
 }
 
 img {
@@ -34,7 +27,6 @@ aside {
     margin-top: 0px;
     padding: 0px 10px;
     top: 20px;
-    border: 2px solid black;
 }
 
 aside h4 {
