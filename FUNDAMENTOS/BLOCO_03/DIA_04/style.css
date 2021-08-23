@@ -4,8 +4,17 @@ body {
 
 header {
     text-align: center;
+    border: 2px solid black;
 }
 
 header li {
     display: inline;
+}
+
+main {
+    border: 2px solid black;
+}
+
+img {
+    width: 300px;
 }
