@@ -16,6 +16,8 @@
             height: 50px;
             text-align: center;
             width: 200px;
+            display: block;
+            margin: 0 auto;
         }
         
         .second {
@@ -24,6 +26,7 @@
             height: 50px;
             text-align: center;
             width: 300px;
+            display: inline-block;
         }
         
         .third {
@@ -32,6 +35,19 @@
             height: 50px;
             text-align: center;
             width: 300px;
+            display: inline-block;
+        }
+        
+        #prizes {
+            text-align: center;
+        }
+        
+        #prizes li {
+            display: inline;
+        }
+        
+        .podium {
+            text-align: center;
         }
     </style>
 </head>
@@ -43,11 +59,13 @@
     <section>
         <ul>
             <li class="first">1º - Equipe 1</li>
-            <li class="second">2º - Equipe 2</li>
-            <li class="third">3º - Equipe 3</li>
+            <div class="podium">
+                <li class="second">2º - Equipe 2</li>
+                <li class="third">3º - Equipe 3</li>
+            </div>
         </ul>
     </section>
-    <section>
+    <section id="prizes">
         <h3>Premiação Primeiro Lugar:</h3>
         <ul>
             <li>| R$ 1000,00 por integrante da equipe |</li>
