@@ -13,8 +13,30 @@ header li {
 
 main {
     border: 2px solid black;
+    position: relative;
+    display: inline-block;
+}
+
+article {
+    margin-top: 20px;
+    margin-right: 26%;
+    border: 2px solid black;
 }
 
 img {
     width: 300px;
+}
+
+aside {
+    position: absolute;
+    display: inline-block;
+    margin-left: 75%;
+    margin-top: 0px;
+    padding: 0px 10px;
+    top: 20px;
+    border: 2px solid black;
+}
+
+aside h4 {
+    margin-top: 10px;
 }
