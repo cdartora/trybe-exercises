@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title" class="header">Título</h2>
+      <p id="paragraph" class="header">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.querySelector("#paragraph");
+      paragraph.style.color = "red";
+      document.querySelector("#page-title").innerHTML = "Chunking Express";
+      paragraph.innerHTML = "Chunking express é um filme Chinês que trata do amor platônico de uma maneira real e com uma ambientação de cair o queixo.";
+      document.querySelector("#subtitle").innerHTML = "Amores Expressos";
+      document.querySelectorAll(".header")[0].style.textAlign = "center";
+      document.querySelectorAll(".h4")[0].style.color = "black";
+    </script>
+  </body>
+</html>
