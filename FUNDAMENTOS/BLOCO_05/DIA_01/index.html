@@ -63,13 +63,13 @@
 
         function changeMain () {
             let main = document.getElementsByClassName("main-content");
-            main[0].style.background-color = "rgb(76,164,109)";
+            main[0].style.backgroundColor = "rgb(76,164,109)";
         }
         changeMain();
 
-        function changeSection (section) {
+        function changeSection () {
             let section = document.getElementsByClassName("center-content");
-            section[0].style.background-color = "white";
+            section[0].style.backgroundColor = "white";
 
         }
         changeSection();
@@ -81,7 +81,7 @@
         changeHeader();
 
         function toUpperP () {
-            let p = getElementsByTagName("p");
+            let p = document.getElementsByTagName("p");
             for (let i = 0; i < p.length; i+=1) {
                 p[i].innerHTML = p[i].innerHTML.toUpperCase();
             }
@@ -89,7 +89,7 @@
         toUpperP();
 
         function logP () {
-            let p = getElementsByTagName("p");
+            let p = document.getElementsByTagName("p");
             for (let i = 0; i < p.length; i+=1) {
                 console.log(p[i].innerHTML);
             }
