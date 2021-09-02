@@ -1,34 +1,37 @@
 // EXERCÍCIO 1
-let n = 11;
+let n = 17;
 
-if (n > 1) {
-    for (let i = 0; i < n; i+=1) {
-        console.log('*'.repeat(n));
-    }
-}
+// if (n > 1) {
+//     for (let i = 0; i < n; i+=1) {
+//         console.log('*'.repeat(n));
+//     }
+// }
 
-// EXERCÍCIO 2
-if (n > 1) {
-    for (let i = 1; i < n + 1; i+=1) {
-        console.log('*'.repeat(i))
-    }
-}
-
-// EXERCÍCIO 3
+// // EXERCÍCIO 2
 // if (n > 1) {
 //     for (let i = 1; i < n + 1; i+=1) {
-//         console.log(' '.repeat(n - i) + '*'.repeat(i))
+//         console.log('*'.repeat(i))
 //     }
 // }
 
+// // EXERCÍCIO 3
+// // if (n > 1) {
+// //     for (let i = 1; i < n + 1; i+=1) {
+// //         console.log(' '.repeat(n - i) + '*'.repeat(i))
+// //     }
+// // }
+
+
+
+
 // EXERCÍCIO 4
-// if (n % 2 == 1) {
-//     let j = (n - 1) / 2;
-//     for (let i = 1; i < n + 1; i += 2) {
-//         console.log(' '.repeat(j) + '*'.repeat(i));
-//         j-=1;
-//     }
-// }
+if (n % 2 == 1) {
+    let j = (n - 1) / 2;
+    for (let i = 1; i < n + 1; i += 2) {
+        console.log(' '.repeat(j) + '*'.repeat(i));
+        j-=1;
+    }
+}
 
 // NÚMERO PRIMO
 // let divisable = [];
