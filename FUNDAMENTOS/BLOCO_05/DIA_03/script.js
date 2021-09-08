@@ -38,14 +38,14 @@ ul.appendChild(li);
 }
 
 // 2
-function createButton(str) {
+function createHoliday(str) {
     const btn = document.createElement("button");
     btn.id = 'btn-holiday';
     btn.innerHTML = str;
     document.querySelector(".buttons-container").appendChild(btn);
 }
 
-createButton("Feriados");
+createHoliday("Feriados");
 
 // 3
 const feriados = document.querySelector("#btn-holiday");
@@ -65,4 +65,14 @@ feriados.addEventListener("click", function() {
     }
 })
 
-// 3
+// 4
+function createFriday(str) {
+    const btn = document.createElement("button");
+    btn.id = 'btn-friday';
+    btn.innerHTML = str;
+    document.querySelector(".buttons-container").appendChild(btn);
+}
+
+createFriday("Sexta-feira");
+
+// 5
