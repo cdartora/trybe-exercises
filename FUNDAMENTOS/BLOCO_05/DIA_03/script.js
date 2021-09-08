@@ -38,3 +38,13 @@ ul.appendChild(li);
 }
 
 // 2
+function createButton(str) {
+    const btn = document.createElement("button");
+    btn.id = 'btn-holiday';
+    btn.innerHTML = str;
+    document.querySelector(".buttons-container").appendChild(btn);
+}
+
+createButton("Feriados");
+
+// 3
