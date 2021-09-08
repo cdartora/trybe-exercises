@@ -92,3 +92,16 @@ sexta.addEventListener("click", function() {
 })
 
 // 6
+for (let i = 0; i < ul.children.length; i+=1) {
+    let li = ul.children[i];
+
+    li.addEventListener("mouseover", function(e) {
+        e.target.style.border = 'solid 1px green'
+    })
+    li.addEventListener("mouseout", function(e) {
+        e.target.style.border = '0px'
+    })
+}
+
+// 7
+ 
