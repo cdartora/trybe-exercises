@@ -76,3 +76,19 @@ function createFriday(str) {
 createFriday("Sexta-feira");
 
 // 5
+const sexta = document.querySelector("#btn-friday");
+const fridayDays = document.querySelectorAll('.friday');
+
+sexta.addEventListener("click", function() {
+    for (let i = 0; i < ul.children.length; i += 1) {
+        let li = ul.children[i];
+
+        if (li.className.includes("friday") && Number.isInteger(parseInt(li.innerHTML))) {
+            li.innerHTML = "Sexta";
+        } else if (li.className.includes("friday") && !(Number.isInteger(parseInt(li.innerHTML)))){
+            li.innerHTML = parseInt(ul.children[i+1].innerHTML) - 1;
+        }
+    }
+})
+
+// 6
