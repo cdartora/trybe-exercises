@@ -48,3 +48,21 @@ function createButton(str) {
 createButton("Feriados");
 
 // 3
+const feriados = document.querySelector("#btn-holiday");
+
+feriados.addEventListener("click", function() {
+    for (let i = 0; i < ul.children.length; i += 1) {
+        let li = ul.children[i];
+
+        if (li.className.includes("holiday") && !(li.style.backgroundColor.includes("green"))) {
+
+            li.style.backgroundColor = "green";
+        } 
+        else if (li.className.includes('holiday') && li.style.backgroundColor.includes('green')) {
+
+            li.style.backgroundColor = "rgb(238,238,238)";
+        }
+    }
+})
+
+// 3
