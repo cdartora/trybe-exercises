@@ -104,4 +104,13 @@ for (let i = 0; i < ul.children.length; i+=1) {
 }
 
 // 7
- 
+const input = document.querySelector("#task-input");
+const add = document.querySelector("#btn-add");
+
+add.addEventListener('click', function() {
+    let task = document.createElement("span");
+    task.innerHTML = input.value;
+    document.querySelector(".my-tasks").appendChild(task);
+})
+
+// 8
