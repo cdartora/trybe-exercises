@@ -109,8 +109,51 @@ const add = document.querySelector("#btn-add");
 
 add.addEventListener('click', function() {
     let task = document.createElement("span");
-    task.innerHTML = input.value;
+    task.innerHTML = input.value + ' ';
     document.querySelector(".my-tasks").appendChild(task);
 })
 
 // 8
+function colorSubtitle (color) {
+    const div = document.createElement('div');
+    div.style.backgroundColor = color;
+    div.className = 'task'
+    document.querySelector('.my-tasks').appendChild(div);
+}
+
+colorSubtitle("red");
+colorSubtitle("yellow");
+
+// 9
+const tasks = document.querySelectorAll('.my-tasks div')
+
+for (let i = 0; i < tasks.length; i += 1) {
+    if (tasks[i].className.includes('task')) {
+        tasks[i].addEventListener('click', function(e) {
+            let isSelected = false;
+
+            if (e.target.className.includes('selected')){
+                e.target.classList.remove("selected");
+
+                isSelected = false;
+            }
+            else if (isSelected == false) {
+                unSelect();
+
+                e.target.classList.add("selected")
+
+                isSelected = true;
+            }
+
+            function unSelect() {
+                for(let i = 0; i < tasks.length; i += 1) {
+                    if(tasks[i].className.includes("selected")) {
+                        tasks[i].classList.remove("selected");
+                    }
+                }
+            }
+        })
+    }    
+}
+
+// 10
