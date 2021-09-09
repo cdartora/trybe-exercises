@@ -153,7 +153,22 @@ for (let i = 0; i < tasks.length; i += 1) {
                 }
             }
         })
-    }    
+    }
 }
 
 // 10
+const days = ul.children;
+
+for (let i = 0; i < days.length; i += 1) {
+    days[i].addEventListener("click", function(e) {
+        e.target.style.color = "rgb(119,119,119)";
+
+        if (e.target.style.color = 'rgb(119,119,119)'){
+            let color = document.querySelector(".selected").style.backgroundColor;
+
+            e.target.style.color = color;
+        } else if (e.target.style.color != 'rgb(119,119,119)') {
+            e.target.style.color = 'rgb(119,119,119)';
+        }
+    })
+}
