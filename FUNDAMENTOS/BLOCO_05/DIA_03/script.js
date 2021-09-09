@@ -161,14 +161,18 @@ const days = ul.children;
 
 for (let i = 0; i < days.length; i += 1) {
     days[i].addEventListener("click", function(e) {
-        e.target.style.color = "rgb(119,119,119)";
+        let color = document.querySelector(".selected").style.backgroundColor;
 
-        if (e.target.style.color = 'rgb(119,119,119)'){
-            let color = document.querySelector(".selected").style.backgroundColor;
-
+        if (e.target.style.color != color){
             e.target.style.color = color;
-        } else if (e.target.style.color != 'rgb(119,119,119)') {
-            e.target.style.color = 'rgb(119,119,119)';
+
+            deSelect(e.target);
+        }
+
+        function deSelect (e) {
+            e.addEventListener("click", function(e) {
+                e.target.style.color = 'rgb(119,119,119)';
+            })    
         }
     })
 }
