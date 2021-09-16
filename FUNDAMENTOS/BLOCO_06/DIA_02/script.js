@@ -8,10 +8,4 @@ for (let i = 0; i < states.length; i += 1) {
     option.name = 'states';
     option.innerHTML = states[i];
     select.appendChild(option);
-}
-
-function preventDefault(e) {
-    e.preventDefault();
-}
-
-submitBtn.addEventListener('click', preventDefault);
+};

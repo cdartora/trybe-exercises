@@ -7,15 +7,16 @@
   <title>Formulário</title>
   <!-- jQuery -->
   <script src="jquery-3.6.0.min.js"></script>
+
   <!-- Bootstrap -->
   <script src="bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.min.css">
+
   <!-- Pikaday -->
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
-  <!-- just validate -->
-  <script src="./node_modules/just-validate/dist/js/just-validate.min.js"></script>
 </head>
+
 <body>
   <!-- Header -->
   <header class="container text-center">
@@ -24,7 +25,7 @@
   </header>
 
   <!-- formulário -->
-  <form action="" method="GET">
+  <form action="" method="GET" id="forms">
 
     <!-- primeiro campo do formulário -->
     <fieldset class="container text-start">
@@ -32,13 +33,13 @@
       <!-- nome - nome -->
       <div class="container">
         <label for="name" class="form-label lead"> Nome completo:</label>
-        <input type="text" class="form-control" placeholder="Insira seu nome" name="nome" id="name" maxlength="40" required>
+        <input type="text" class="form-control" placeholder="Insira seu nome" data-validate-field="name" name="name" id="name" maxlength="40" required>
       </div>
 
       <!-- e-mail - email-->
       <div class="container">
         <label for="email" class="form-label lead"> E-mail:</label>
-        <input type="email" class="form-control" placeholder="Insira seu e-mail" autocomplete="off" data-validate-field="email" name="email" id="email">
+        <input type="email" class="form-control" placeholder="Insira seu e-mail" autocomplete="off" data-validate-field="email" name="email" id="email" required>
       </div>
 
       <!-- CPF - CPF -->
@@ -55,7 +56,7 @@
       
       <!-- cidade - city -->
       <div class="container">
-        <label for="city">Cidade:</label>
+        <label for="city" class="form-label lead">Cidade:</label>
         <input class="form-control" type="text" placeholder="Insira sua cidade" id='city' name='cidade' maxlength='28' required>
       </div>
 
@@ -94,8 +95,8 @@
 
       <!-- cargo do emprego -->
       <div class="container">
-        <label for="position">Cargo:</label>
-        <input class="form-control" type="text" placeholder="Insira seu cargo no trabalho" id="position" name="cargo" maxlength="40" required>
+        <label for="position" class="form-label lead">Cargo:</label>
+        <input class="form-control" type="text" placeholder="Insira seu cargo no trabalho" id="position" maxlength="40" required>
       </div>
 
       <!-- descrição detalhada do cargo -->
