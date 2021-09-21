@@ -23,6 +23,22 @@ let div4 = document.createElement('div');
 div4.innerHTML = "4a Seção";
 you.firstElementChild.firstElementChild.appendChild(div4);
 
+let dad = document.getElementById("paiDoPai");
+let firstSon = you.firstElementChild;
+let father = dad.firstElementChild;
+
+father.removeChild(father.firstElementChild);
+father.removeChild(father.lastElementChild);
+father.removeChild(father.lastElementChild);
+father.removeChild(father.lastElementChild);
+father.removeChild(father.lastChild);
+father.removeChild(father.lastChild);
+father.removeChild(father.lastChild);
+you.removeChild(you.lastElementChild);
+you.removeChild(you.lastElementChild);
+you.removeChild(you.firstChild);
+you.firstElementChild.removeChild(you.firstElementChild.firstElementChild);
+
 let removes = document.getElementById("paiDoPai");
 
 removes.removeChild("primeiroFilho");
