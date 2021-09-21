@@ -39,6 +39,18 @@ you.removeChild(you.lastElementChild);
 you.removeChild(you.firstChild);
 you.firstElementChild.removeChild(you.firstElementChild.firstElementChild);
 
+let removes = document.getElementById("paiDoPai");
 
+removes.removeChild("primeiroFilho");
 
+removes.removeChild(segundoEUltimoFilhoDoFilho);
 
+removes.removeChild(primeiroFilho);
+
+removes.removeChild(primeiroFilho);
+
+removes.removeChild(primeiroFilho);
+
+removes.removeChild(primeiroFilho);
+
+removes.removeChild(primeiroFilho);
