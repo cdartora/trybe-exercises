@@ -93,3 +93,33 @@
         width: 100%;
       }
   }
+
+  @media screen and (max-width: 768px) {
+      #aside {
+          display: none;
+      }
+      body {
+          padding: 0;
+      }
+      #content {
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          width: 100%;
+      }
+      #content img {
+          flex-grow: 1;
+          padding: 10px;
+      }
+      #container header {
+          position: fixed;
+          width: 100%;
+          top: 0;
+      }
+      #navigation ul {
+          margin-top: 75px;
+          display: flex;
+          flex-direction: column;
+          list-style-type: none;
+      }
+  }
