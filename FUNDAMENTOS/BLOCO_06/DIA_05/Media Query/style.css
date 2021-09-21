@@ -1,11 +1,12 @@
-body {
-
+.figure-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
-h1 {
 
-}
-h2 {
-
+main figure {
+    margin-bottom: 50px;
 }
 
 img {
@@ -14,4 +15,38 @@ img {
 
 figure {
     margin: 0;
+}
+
+/* telas menores que 756px */
+@media screen and (max-width: 756px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+    section {
+        font-size: 1.5em;
+        padding: 20px;
+        text-align: justify; 
+    }
+    .figure-container {
+        padding: 20px;
+    }
+}
+
+/* telas maiores de 900px */
+@media screen and (min-width: 900px) {
+    main div:nth-of-type(1) {
+        text-align: center;
+    }
+    .figure-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 200px;
+        justify-content: center;
+    }
+    .figure-container figure {
+        padding: 20px;
+    }
 }
