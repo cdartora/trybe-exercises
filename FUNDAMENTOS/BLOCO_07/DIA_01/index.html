@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>Click Here</button>
+  <p>0</p>
+  <script>
+    const btn = document.querySelector('button');
+    const p = document.querySelector('p');
+
+    let counter = 0;
+    btn.addEventListener('click', (e) => {
+      counter += 1;
+      p.innerHTML = counter;
+    })
+  </script>
+</body>
+</html>
