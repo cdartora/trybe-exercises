@@ -197,15 +197,12 @@ const expectedResult4 = false;
 
 function authorUnique() {
   // escreva seu código aqui
-  const unique = books.forEach((book) => {
-    const author = books.find((b) => {
-      return b.author.birthYear === book.author.birthYear;
-    })
-    
-    return author;
+  const isUnique = false;
+  books.forEach((book1, index) => {
+    isUnique = books.some((book2) => {
+      return book1.author
+    })    
   })
-
-  return unique;
 }
 
 assert.strictEqual(authorUnique(), expectedResult4);
