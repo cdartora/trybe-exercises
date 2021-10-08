@@ -62,6 +62,6 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-const reduceNames = books.reduce((acc, curr) => `${acc}, ${curr.author.name}`, '');
+const reduceNames = books.reduce((acc, curr) => `${acc}${curr.author.name}, `, '');
 
 console.log(reduceNames);
