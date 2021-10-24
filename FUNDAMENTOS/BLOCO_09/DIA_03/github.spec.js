@@ -19,8 +19,8 @@ describe('Testa getRepos com github da Trybe', () => {
     expect(repos).toContain('sd-01-week4-5-project-meme-generator');
   })
 
-  test('testa em caso de falso positivo'), async () => {
-    const repos = await getRepos('https://api.github.com/orgs/tryber/repos');
-    expect(repos).toContain('test');
-  };
+  // test('testa em caso de falso positivo'), async () => {
+  //   const repos = await getRepos('https://api.github.com/orgs/tryber/repos');
+  //   expect(repos).toContain('test');
+  // };
 });
