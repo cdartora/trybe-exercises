@@ -1,0 +1,12 @@
+const arrays = [
+  ['1', '2', '3'],
+  [true],
+  [4, 5, 6],
+];
+
+const flatten = arrays.reduce((acc, curr) => {
+  curr.forEach((value) => { acc.push(value) });
+  return acc;
+}, []);
+
+console.log(flatten);
