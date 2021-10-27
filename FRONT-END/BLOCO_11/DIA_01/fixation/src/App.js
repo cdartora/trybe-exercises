@@ -1,8 +1,8 @@
-import Component from './component';
+import Carlos from './component';
 import './App.css';
 
 function App() {
-  return <Component />
+  return <Carlos />
 }
 
 export default App;
