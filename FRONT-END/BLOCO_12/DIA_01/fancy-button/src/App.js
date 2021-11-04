@@ -5,7 +5,7 @@ class App extends React.Component {
     super()
 
     this.btnOneHandler = this.btnOneHandler.bind(this);
-    this.btnTwoHandler = this.btnTwoHandler.bind(this);
+    this.btnTwoHandlfor (var i = 0; i < Things.
     this.btnThreeHandler = this.btnThreeHandler.bind(this)
 
     this.state = {
