@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 
 class InputName extends Component {
   render() {
-    const { onChange, onError, value } = this.props;
-
-    if (value.length > 10) onError();
+    const { onChange, value } = this.props;
 
     return (
       <>

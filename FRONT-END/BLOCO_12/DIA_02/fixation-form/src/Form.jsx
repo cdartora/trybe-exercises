@@ -7,7 +7,7 @@ class Form extends Component {
     super(props);
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleErrors = this.handleErrors.bind(this);
+    this.verifyErrors = this.verifyErrors.bind(this);
 
 
     this.state = {
@@ -15,19 +15,35 @@ class Form extends Component {
       name: '',
       type: '',
       live: '',
-      errors: false,
+      thereIsErrors: true,
     }
   }
 
-  handleErrors() {
-    const { errors } = this.state;
 
-    if(errors) this.setState({ errors: true });
+
+  verifyErrors() {
+    const { desc, name, } = this.state;
+
+    const errorCases = [
+      !name.length,
+      name.length > 10,
+      !desc.length,
+    ];
+
+    const errorCheck = errorCases.every((error) => error !== false);
+
+    this.setState({
+      thereIsErrors: errorCheck,
+    })
   }
 
   handleChange({ target }) {
+    this.verifyErrors();
+
     const { name } = target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
+
+    this.verifyErrors(target);
 
     this.setState({ [name]: value });
   }
@@ -39,13 +55,13 @@ class Form extends Component {
           <InputName
             value={ this.state.name }
             onChange={ this.handleChange }
-            onError={ this.handleErrors }
+            onError={ this.verifyErrors }
           />
 
           <SelectType
             value={ this.state.type }
             onChange={ this.handleChange }
-            onError={ this.handleErrors }
+            onError={ this.verifyErrors }
           />
 
           <p>Descrição do quadro</p>
